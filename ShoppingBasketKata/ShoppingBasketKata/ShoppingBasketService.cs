@@ -2,13 +2,15 @@
 
 public class ShoppingBasketService
 {
+    private readonly IShoppingBasketRepository shoppingBasketRepository;
+
     public ShoppingBasketService(IShoppingBasketRepository shoppingBasketRepository)
     {
-        throw new NotImplementedException();
+        this.shoppingBasketRepository = shoppingBasketRepository;
     }
 
     public void AddItem(UserID userId, ProductID productId, int quantity) =>
-        throw new NotImplementedException();
+        shoppingBasketRepository.Register(userId, productId, quantity);
 
     public Basket BasketFor(UserID userId) =>
         throw new NotImplementedException();
