@@ -7,8 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="red">
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" afterDir="false" />
+    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="green">
+      <change afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingBasketKata/UserProductAmount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/BasketEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/BasketEntry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/ShoppingBasketService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/Basket.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -82,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644407455794</updated>
       <workItem from="1644407459690" duration="1841000" />
-      <workItem from="1644412207596" duration="914000" />
+      <workItem from="1644412207596" duration="1668000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1644407471974</created>
@@ -119,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644413091245</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="green">
+      <created>1644413152651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644413152651</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +175,7 @@
     <MESSAGE value="acceptance test" />
     <MESSAGE value="settings" />
     <MESSAGE value="red" />
-    <option name="LAST_COMMIT_MESSAGE" value="red" />
+    <MESSAGE value="green" />
+    <option name="LAST_COMMIT_MESSAGE" value="green" />
   </component>
 </project>

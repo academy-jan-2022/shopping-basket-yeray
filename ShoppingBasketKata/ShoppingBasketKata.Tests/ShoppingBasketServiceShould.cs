@@ -10,9 +10,9 @@ public class ShoppingBasketServiceShould
     {
         var userID = new UserID(1);
         var hobbitID = new ProductID(1);
-        var shoppingBasketRepository = new Mock<IShoppingBasketRepository>();
-        var service = new ShoppingBasketService(shoppingBasketRepository.Object);
+        var shoppingBasketRepositoryMock = new Mock<IShoppingBasketRepository>();
+        var service = new ShoppingBasketService(shoppingBasketRepositoryMock.Object);
         service.AddItem(userID, hobbitID, 3);
-        shoppingBasketRepository.Verify(r => r.Register(userID, hobbitID, 3));
+        shoppingBasketRepositoryMock.Verify(r => r.Register(userID, hobbitID, 3), Times.Once);
     }
 }
