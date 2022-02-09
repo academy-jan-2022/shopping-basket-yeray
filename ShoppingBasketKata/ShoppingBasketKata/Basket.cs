@@ -1,3 +1,6 @@
 ﻿namespace ShoppingBasketKata;
 
-public class Basket { }
+public record Basket(UserID UserID, DateTime CreatedAt, BasketEntry[] ExpectedProducts)
+{
+    public Money TotalAmount => throw new NotImplementedException();
+}
