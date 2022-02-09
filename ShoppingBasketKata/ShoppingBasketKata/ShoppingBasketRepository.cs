@@ -2,8 +2,11 @@
 
 public class ShoppingBasketRepository : IShoppingBasketRepository
 {
-    public void Register(UserID userID, ProductID productID, int amount) { }
+    private readonly List<UserProductAmount> database = new();
+
+    public void Register(UserID userID, ProductID productID, int amount) =>
+        database.Add(new UserProductAmount(productID, userID, amount));
 
     public UserProductAmount[] GetFor(UserID userID) =>
-        new[] { new UserProductAmount(new ProductID(1), userID, 5) };
+        database.ToArray();
 }
