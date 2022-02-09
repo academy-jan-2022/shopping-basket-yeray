@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingBasketKata", "ShoppingBasketKata\ShoppingBasketKata.csproj", "{C85F3F4B-2C7E-475E-A920-7CB82EB9EE36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingBasketKata.Tests", "ShoppingBasketKata.Tests\ShoppingBasketKata.Tests.csproj", "{4E61DA9B-4EE6-46C5-BA04-B459AFE7F8C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{C85F3F4B-2C7E-475E-A920-7CB82EB9EE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C85F3F4B-2C7E-475E-A920-7CB82EB9EE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C85F3F4B-2C7E-475E-A920-7CB82EB9EE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E61DA9B-4EE6-46C5-BA04-B459AFE7F8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E61DA9B-4EE6-46C5-BA04-B459AFE7F8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E61DA9B-4EE6-46C5-BA04-B459AFE7F8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E61DA9B-4EE6-46C5-BA04-B459AFE7F8C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
