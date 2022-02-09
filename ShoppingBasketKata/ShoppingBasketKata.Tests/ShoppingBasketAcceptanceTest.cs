@@ -24,7 +24,7 @@ Then it should contain the following infomation:
         var hobbit = new Product("The Hobbit", new Money(5), hobbitID);
         var breakingBadID = new ProductID(145);
         var breakingBad = new Product("Breaking Bad", new Money(7), breakingBadID);
-        var service = new ShoppingBasketService();
+        var service = new ShoppingBasketService(new ShoppingBasketRepository());
         service.AddItem(userID, hobbitID, 2);
         service.AddItem(userID, breakingBadID, 5);
         var basket = service.BasketFor(userID);

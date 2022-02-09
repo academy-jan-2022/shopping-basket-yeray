@@ -2,6 +2,11 @@
 
 public class ShoppingBasketService
 {
+    public ShoppingBasketService(IShoppingBasketRepository shoppingBasketRepository)
+    {
+        throw new NotImplementedException();
+    }
+
     public void AddItem(UserID userId, ProductID productId, int quantity) =>
         throw new NotImplementedException();
 
