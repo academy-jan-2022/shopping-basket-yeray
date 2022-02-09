@@ -3,10 +3,12 @@
 public class ShoppingBasketService
 {
     private readonly IShoppingBasketRepository shoppingBasketRepository;
+    private readonly IProductRepository productRepository;
 
-    public ShoppingBasketService(IShoppingBasketRepository shoppingBasketRepository)
+    public ShoppingBasketService(IShoppingBasketRepository shoppingBasketRepository, IProductRepository productRepository)
     {
         this.shoppingBasketRepository = shoppingBasketRepository;
+        this.productRepository = productRepository;
     }
 
     public void AddItem(UserID userId, ProductID productId, int quantity) =>
