@@ -15,6 +15,18 @@ public class ShoppingBasketRepositoryShould
         Assert.Equal(new [] { new UserProductAmount(hobbitID, userID, 5) }, result);
     }
 
+    [Fact(DisplayName = "register something being added twice to the basket")]
+    public void Test4()
+    {
+        var repository = new ShoppingBasketRepository();
+        var userID = new UserID(1);
+        var hobbitID = new ProductID(1);
+        repository.Register(userID, hobbitID, 5);
+        repository.Register(userID, hobbitID, 5);
+        var result = repository.GetFor(userID);
+        Assert.Equal(new [] { new UserProductAmount(hobbitID, userID, 10) }, result);
+    }
+
     [Fact(DisplayName = "registers something else being added to the basket")]
     public void Test2()
     {
