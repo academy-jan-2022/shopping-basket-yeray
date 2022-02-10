@@ -42,5 +42,5 @@ public class ShoppingBasketRepository : IShoppingBasketRepository
     }
 
     public DateTime GetCreationDate(UserID userId) =>
-        throw new NotImplementedException();
+        database[userId].CreatedAt;
 }

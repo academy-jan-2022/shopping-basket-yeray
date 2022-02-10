@@ -7,13 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="green">
+    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="progress">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ITimeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ITimeProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/TimeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/TimeProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/88405ed0d21f6cebf09c97e79de464bceb33daf1cccb01faef4aff1649a9b84/Mock`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/Basket.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/IShoppingBasketRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/ITimeProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/ShoppingBasketService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -95,7 +94,7 @@
       <workItem from="1644407459690" duration="1841000" />
       <workItem from="1644412207596" duration="2776000" />
       <workItem from="1644415022622" duration="3402000" />
-      <workItem from="1644488362681" duration="3952000" />
+      <workItem from="1644488362681" duration="4202000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1644407471974</created>
@@ -244,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644494535227</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="progress">
+      <created>1644494686609</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1644494686609</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +297,7 @@
     <MESSAGE value="green-ish" />
     <MESSAGE value="greener" />
     <MESSAGE value="green" />
-    <option name="LAST_COMMIT_MESSAGE" value="green" />
+    <MESSAGE value="progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress" />
   </component>
 </project>

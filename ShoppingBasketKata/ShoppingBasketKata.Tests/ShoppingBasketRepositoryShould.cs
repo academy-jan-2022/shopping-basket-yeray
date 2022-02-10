@@ -53,4 +53,15 @@ public class ShoppingBasketRepositoryShould
         var result = repository.GetFor(userID);
         Assert.Equal(new [] { new UserProductAmount(hitchickersGuideToTheGalaxyID, 3) }, result);
     }
+
+    [Fact(DisplayName = "return a creation date")]
+    public void Test5()
+    {
+        IShoppingBasketRepository repository = new ShoppingBasketRepository();
+        var userID = new UserID(1);
+        var hitchickersGuideToTheGalaxyID = new ProductID(42);
+        repository.Register(userID, hitchickersGuideToTheGalaxyID, 3, CreatedAt);
+        var result = repository.GetCreationDate(userID);
+        Assert.Equal(CreatedAt, result);
+    }
 }
