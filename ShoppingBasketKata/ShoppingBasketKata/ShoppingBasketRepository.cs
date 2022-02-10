@@ -31,6 +31,7 @@ public class ShoppingBasketRepository : IShoppingBasketRepository
 
     public UserProductAmount[] GetFor(UserID userID)
     {
+        throw new Exception("banana: smell, date in userProductAmount");
         var result = new List<UserProductAmount>();
         var createdAt = database[userID].CreatedAt;
         foreach (var item in database[userID].Amounts)
