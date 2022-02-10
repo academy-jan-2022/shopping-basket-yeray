@@ -12,7 +12,11 @@ public class ShoppingBasketServiceShould
         var userID = new UserID(1);
         var hobbitID = new ProductID(1);
         var shoppingBasketRepositoryMock = new Mock<IShoppingBasketRepository>();
-        var service = new ShoppingBasketService(shoppingBasketRepositoryMock.Object, Mock.Of<IProductRepository>());
+        var service = new ShoppingBasketService(
+            shoppingBasketRepositoryMock.Object,
+            Mock.Of<IProductRepository>(),
+            Mock.Of<ITimeProvider>()
+        );
         service.AddItem(userID, hobbitID, 3);
         shoppingBasketRepositoryMock.Verify(r => r.Register(userID, hobbitID, 3), Times.Once);
     }
@@ -24,11 +28,13 @@ public class ShoppingBasketServiceShould
         var hobbitID = new ProductID(1);
         var hobbit = new Product("The Hobbit", new Money(5), hobbitID);
         var shoppingBasketRepositoryMock = new Mock<IShoppingBasketRepository>();
+        var timeProviderMock = new Mock<ITimeProvider>();
         var productRepositoryMock = new Mock<IProductRepository>();
         productRepositoryMock.Setup(pr => pr.Get(hobbitID)).Returns(hobbit);
         var service = new ShoppingBasketService(
             shoppingBasketRepositoryMock.Object,
-            productRepositoryMock.Object
+            productRepositoryMock.Object,
+            timeProviderMock.Object
         );
         var result = service.BasketFor(userID);
         var expectedBasket = new Basket(

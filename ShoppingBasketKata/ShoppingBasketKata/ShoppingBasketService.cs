@@ -5,7 +5,7 @@ public class ShoppingBasketService
     private readonly IShoppingBasketRepository shoppingBasketRepository;
     private readonly IProductRepository productRepository;
 
-    public ShoppingBasketService(IShoppingBasketRepository shoppingBasketRepository, IProductRepository productRepository)
+    public ShoppingBasketService(IShoppingBasketRepository shoppingBasketRepository, IProductRepository productRepository, ITimeProvider timeProvider)
     {
         this.shoppingBasketRepository = shoppingBasketRepository;
         this.productRepository = productRepository;
