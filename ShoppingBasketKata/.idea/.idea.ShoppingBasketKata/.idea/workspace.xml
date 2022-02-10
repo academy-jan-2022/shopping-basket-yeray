@@ -7,13 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ShoppingBasketKata/IProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingBasketKata/ProductRepository.cs" afterDir="false" />
+    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="red-ish">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/IProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/IProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ProductRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,8 @@
       <updated>1644407455794</updated>
       <workItem from="1644407459690" duration="1841000" />
       <workItem from="1644412207596" duration="2776000" />
-      <workItem from="1644415022622" duration="2685000" />
+      <workItem from="1644415022622" duration="3402000" />
+      <workItem from="1644488362681" duration="421000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1644407471974</created>
@@ -157,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644414982775</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="red-ish">
+      <created>1644423322195</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1644423322195</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +173,7 @@
     <option name="coveragePercentColumnWidth" value="188" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="255" />
+    <option name="symbolColumnWidth" value="285" />
     <coverage-tree-state>
       <expand />
       <select />
@@ -196,6 +202,7 @@
     <MESSAGE value="settings" />
     <MESSAGE value="red" />
     <MESSAGE value="green" />
-    <option name="LAST_COMMIT_MESSAGE" value="green" />
+    <MESSAGE value="red-ish" />
+    <option name="LAST_COMMIT_MESSAGE" value="red-ish" />
   </component>
 </project>

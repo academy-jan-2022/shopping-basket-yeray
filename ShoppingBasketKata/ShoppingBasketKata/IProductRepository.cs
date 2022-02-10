@@ -1,3 +1,6 @@
 ﻿namespace ShoppingBasketKata;
 
-public interface IProductRepository { }
+public interface IProductRepository
+{
+    Product Get(ProductID id);
+}

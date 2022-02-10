@@ -25,6 +25,7 @@ public class ShoppingBasketServiceShould
         var hobbit = new Product("The Hobbit", new Money(5), hobbitID);
         var shoppingBasketRepositoryMock = new Mock<IShoppingBasketRepository>();
         var productRepositoryMock = new Mock<IProductRepository>();
+        productRepositoryMock.Setup(pr => pr.Get(hobbitID)).Returns(hobbit);
         var service = new ShoppingBasketService(
             shoppingBasketRepositoryMock.Object,
             productRepositoryMock.Object
