@@ -31,15 +31,16 @@ public class ShoppingBasketRepository : IShoppingBasketRepository
 
     public UserProductAmount[] GetFor(UserID userID)
     {
-        throw new Exception("banana: smell, date in userProductAmount");
         var result = new List<UserProductAmount>();
-        var createdAt = database[userID].CreatedAt;
         foreach (var item in database[userID].Amounts)
         {
             var (productID, amount) = item;
-            result.Add(new UserProductAmount(productID, userID, amount, createdAt));
+            result.Add(new UserProductAmount(productID, amount));
         }
 
         return result.ToArray();
     }
+
+    public DateTime GetCreationDate(UserID userId) =>
+        throw new NotImplementedException();
 }

@@ -15,7 +15,7 @@ public class ShoppingBasketRepositoryShould
         var hobbitID = new ProductID(7);
         repository.Register(userID, hobbitID, 5, CreatedAt);
         var result = repository.GetFor(userID);
-        Assert.Equal(new [] { new UserProductAmount(hobbitID, userID, 5, CreatedAt) }, result);
+        Assert.Equal(new [] { new UserProductAmount(hobbitID, 5) }, result);
     }
 
     [Fact(DisplayName = "register something being added twice to the basket")]
@@ -27,7 +27,7 @@ public class ShoppingBasketRepositoryShould
         repository.Register(userID, hobbitID, 5, CreatedAt);
         repository.Register(userID, hobbitID, 5, CreatedAt);
         var result = repository.GetFor(userID);
-        Assert.Equal(new [] { new UserProductAmount(hobbitID, userID, 10, CreatedAt) }, result);
+        Assert.Equal(new [] { new UserProductAmount(hobbitID, 10) }, result);
     }
 
     [Fact(DisplayName = "registers something else being added to the basket")]
@@ -38,7 +38,7 @@ public class ShoppingBasketRepositoryShould
         var hitchickersGuideToTheGalaxyID = new ProductID(42);
         repository.Register(userID, hitchickersGuideToTheGalaxyID, 3, CreatedAt);
         var result = repository.GetFor(userID);
-        Assert.Equal(new [] { new UserProductAmount(hitchickersGuideToTheGalaxyID, userID, 3, CreatedAt) }, result);
+        Assert.Equal(new [] { new UserProductAmount(hitchickersGuideToTheGalaxyID, 3) }, result);
     }
 
     [Fact(DisplayName = "registers something added to the basket for another user")]
@@ -51,6 +51,6 @@ public class ShoppingBasketRepositoryShould
         repository.Register(userID, hitchickersGuideToTheGalaxyID, 3, CreatedAt);
         repository.Register(anotherUserID, hitchickersGuideToTheGalaxyID, 6, CreatedAt);
         var result = repository.GetFor(userID);
-        Assert.Equal(new [] { new UserProductAmount(hitchickersGuideToTheGalaxyID, userID, 3, CreatedAt) }, result);
+        Assert.Equal(new [] { new UserProductAmount(hitchickersGuideToTheGalaxyID, 3) }, result);
     }
 }

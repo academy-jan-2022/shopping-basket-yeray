@@ -19,7 +19,7 @@ public class ShoppingBasketService
     public Basket BasketFor(UserID userId)
     {
         var items = shoppingBasketRepository.GetFor(userId);
-        var createdAt = items.First().CreatedAt;
+        var createdAt = shoppingBasketRepository.GetCreationDate(userId);
         var basketEntries = new List<BasketEntry>();
         foreach (var item in items)
         {
