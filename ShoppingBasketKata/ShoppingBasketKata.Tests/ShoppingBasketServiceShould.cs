@@ -29,6 +29,8 @@ public class ShoppingBasketServiceShould
         var hobbit = new Product("The Hobbit", new Money(5), hobbitID);
         var shoppingBasketRepositoryMock = new Mock<IShoppingBasketRepository>();
         var timeProviderMock = new Mock<ITimeProvider>();
+        var createdAt = new DateTime(2017, 01, 01);
+        timeProviderMock.Setup(tp => tp.Now()).Returns(createdAt);
         var productRepositoryMock = new Mock<IProductRepository>();
         productRepositoryMock.Setup(pr => pr.Get(hobbitID)).Returns(hobbit);
         var service = new ShoppingBasketService(
@@ -39,7 +41,7 @@ public class ShoppingBasketServiceShould
         var result = service.BasketFor(userID);
         var expectedBasket = new Basket(
             userID,
-            new DateTime(2017, 01, 01),
+            createdAt,
             new[] { new BasketEntry(hobbit, 7) }
         );
         Assert.Equal(expectedBasket, result);

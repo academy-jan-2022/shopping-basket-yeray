@@ -7,15 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="added product repo">
-      <change afterPath="$PROJECT_DIR$/ShoppingBasketKata/ITimeProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingBasketKata/TimeProvider.cs" afterDir="false" />
+    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="introduced timeprovider">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/IShoppingBasketRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/IShoppingBasketRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ITimeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ITimeProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/TimeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/TimeProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1644407459690" duration="1841000" />
       <workItem from="1644412207596" duration="2776000" />
       <workItem from="1644415022622" duration="3402000" />
-      <workItem from="1644488362681" duration="1480000" />
+      <workItem from="1644488362681" duration="1554000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1644407471974</created>
@@ -177,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644488799188</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="introduced timeprovider">
+      <created>1644492203272</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644492203272</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +221,7 @@
     <MESSAGE value="green" />
     <MESSAGE value="red-ish" />
     <MESSAGE value="added product repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="added product repo" />
+    <MESSAGE value="introduced timeprovider" />
+    <option name="LAST_COMMIT_MESSAGE" value="introduced timeprovider" />
   </component>
 </project>

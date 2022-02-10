@@ -1,3 +1,6 @@
 ﻿namespace ShoppingBasketKata;
 
-public interface ITimeProvider { }
+public interface ITimeProvider
+{
+    DateTime Now();
+}
