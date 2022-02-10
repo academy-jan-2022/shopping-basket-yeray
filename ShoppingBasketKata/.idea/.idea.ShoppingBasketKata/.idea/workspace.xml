@@ -7,11 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="introduced timeprovider">
+    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="setup">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketServiceShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ITimeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ITimeProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/TimeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/TimeProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/IShoppingBasketRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/IShoppingBasketRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/UserProductAmount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/UserProductAmount.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/IProductRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/88405ed0d21f6cebf09c97e79de464bceb33daf1cccb01faef4aff1649a9b84/Mock`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,7 +91,7 @@
       <workItem from="1644407459690" duration="1841000" />
       <workItem from="1644412207596" duration="2776000" />
       <workItem from="1644415022622" duration="3402000" />
-      <workItem from="1644488362681" duration="1554000" />
+      <workItem from="1644488362681" duration="2136000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1644407471974</created>
@@ -180,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644492203272</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="setup">
+      <created>1644492296032</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644492296032</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +233,7 @@
     <MESSAGE value="red-ish" />
     <MESSAGE value="added product repo" />
     <MESSAGE value="introduced timeprovider" />
-    <option name="LAST_COMMIT_MESSAGE" value="introduced timeprovider" />
+    <MESSAGE value="setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup" />
   </component>
 </project>

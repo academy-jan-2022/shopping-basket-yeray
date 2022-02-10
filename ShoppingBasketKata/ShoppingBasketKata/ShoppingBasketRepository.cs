@@ -2,22 +2,23 @@
 
 public class ShoppingBasketRepository : IShoppingBasketRepository
 {
-    private readonly Dictionary<UserID, Dictionary<ProductID, int>> database = new();
+    private readonly Dictionary<UserID, Dictionary<ProductID, (int, DateTime)>> database = new();
 
-    public void Register(UserID userID, ProductID productID, int amount)
+    public void Register(UserID userID, ProductID productID, int amount, DateTime createdAt)
     {
         if (!database.ContainsKey(userID))
         {
-            database[userID] = new Dictionary<ProductID, int>();
+            database[userID] = new Dictionary<ProductID, (int, DateTime)>();
         }
 
         if (!database[userID].ContainsKey(productID))
         {
-            database[userID][productID] = amount;
+            database[userID][productID] = (amount, createdAt);
             return;
         }
 
-        database[userID][productID] += amount;
+        var (currentAmount, originalCreatedAt) = database[userID][productID];
+        database[userID][productID] = (amount + currentAmount, originalCreatedAt);
     }
 
     public UserProductAmount[] GetFor(UserID userID)
@@ -28,7 +29,8 @@ public class ShoppingBasketRepository : IShoppingBasketRepository
         var result = new List<UserProductAmount>();
         foreach (var item in database[userID])
         {
-            result.Add(new UserProductAmount(item.Key, userID, item.Value));
+            var (amount, createdAt) = item.Value;
+            result.Add(new UserProductAmount(item.Key, userID, amount, createdAt));
         }
 
         return result.ToArray();
