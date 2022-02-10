@@ -3,5 +3,5 @@
 public interface IProductRepository
 {
     Product Get(ProductID id);
-    void Upsert(Product hobbit);
+    void Upsert(Product product);
 }
