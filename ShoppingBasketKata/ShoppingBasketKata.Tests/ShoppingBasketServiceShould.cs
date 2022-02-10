@@ -15,7 +15,7 @@ public class ShoppingBasketServiceShould
         var hobbitID = new ProductID(1);
         var shoppingBasketRepositoryMock = new Mock<IShoppingBasketRepository>();
         var timeProviderMock = new Mock<ITimeProvider>();
-        timeProviderMock.Setup(tp => tp.Now()).Returns(CreatedAt);
+        timeProviderMock.Setup(tp => tp.Today()).Returns(CreatedAt);
         var service = new ShoppingBasketService(
             shoppingBasketRepositoryMock.Object,
             Mock.Of<IProductRepository>(),
@@ -36,7 +36,7 @@ public class ShoppingBasketServiceShould
             .Returns(new[] { new UserProductAmount(hobbitID, 7) });
         shoppingBasketRepositoryMock.Setup(sbr => sbr.GetCreationDate(userID)).Returns(CreatedAt);
         var timeProviderMock = new Mock<ITimeProvider>();
-        timeProviderMock.Setup(tp => tp.Now()).Returns(CreatedAt);
+        timeProviderMock.Setup(tp => tp.Today()).Returns(CreatedAt);
         var productRepositoryMock = new Mock<IProductRepository>();
         productRepositoryMock.Setup(pr => pr.Get(hobbitID)).Returns(hobbit);
         var service = new ShoppingBasketService(

@@ -2,6 +2,6 @@
 
 public class TimeProvider : ITimeProvider
 {
-    public DateTime Now() =>
-        throw new NotImplementedException();
+    public DateTime Today() =>
+        DateTime.Now.Date;
 }

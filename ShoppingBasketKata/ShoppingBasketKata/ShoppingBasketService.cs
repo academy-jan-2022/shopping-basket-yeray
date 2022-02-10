@@ -14,7 +14,7 @@ public class ShoppingBasketService
     }
 
     public void AddItem(UserID userId, ProductID productId, int quantity) =>
-        shoppingBasketRepository.Register(userId, productId, quantity, timeProvider.Now());
+        shoppingBasketRepository.Register(userId, productId, quantity, timeProvider.Today());
 
     public Basket BasketFor(UserID userId)
     {

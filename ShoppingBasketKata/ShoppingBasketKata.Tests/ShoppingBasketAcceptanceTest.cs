@@ -24,6 +24,8 @@ Then it should contain the following infomation:
         var hobbit = new Product("The Hobbit", new Money(5), hobbitID);
         var breakingBadID = new ProductID(145);
         var breakingBad = new Product("Breaking Bad", new Money(7), breakingBadID);
+        // This test breaks at midnight.
+        var createdAt = DateTime.Now.Date;
         var service = new ShoppingBasketService(new ShoppingBasketRepository(), new ProductRepository(), new TimeProvider());
         service.AddItem(userID, hobbitID, 2);
         service.AddItem(userID, breakingBadID, 5);
@@ -35,9 +37,9 @@ Then it should contain the following infomation:
             new(breakingBad, 5)
         };
 
-        var expectedBasket = new Basket(userID, new DateTime(2017, 1, 1), expectedProducts);
-
-        Assert.Equal(expectedBasket, basket);
+        Assert.Equal(userID, basket.UserID);
+        Assert.Equal(createdAt, basket.CreatedAt);
+        Assert.Equal(expectedProducts, basket.Products);
         Assert.Equal(new Money(45), basket.TotalAmount);
     }
 }
