@@ -7,11 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="progress">
+    <list default="true" id="754ba310-a9c9-4b9a-8fb8-37323f82bebe" name="Changes" comment="gedaan">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingBasketKata/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketRepositoryShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata.Tests/ShoppingBasketAcceptanceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/IProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/IProductRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingBasketKata/ShoppingBasketRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,7 @@
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/IShoppingBasketRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/ITimeProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/ShoppingBasketService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/repos/shopping-basket-yeray/ShoppingBasketKata/ShoppingBasketKata/ProductRepository.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -94,7 +95,7 @@
       <workItem from="1644407459690" duration="1841000" />
       <workItem from="1644412207596" duration="2776000" />
       <workItem from="1644415022622" duration="3402000" />
-      <workItem from="1644488362681" duration="4202000" />
+      <workItem from="1644488362681" duration="6243000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1644407471974</created>
@@ -250,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644494686609</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="gedaan">
+      <created>1644494964906</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1644494964906</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +306,7 @@
     <MESSAGE value="greener" />
     <MESSAGE value="green" />
     <MESSAGE value="progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress" />
+    <MESSAGE value="gedaan" />
+    <option name="LAST_COMMIT_MESSAGE" value="gedaan" />
   </component>
 </project>

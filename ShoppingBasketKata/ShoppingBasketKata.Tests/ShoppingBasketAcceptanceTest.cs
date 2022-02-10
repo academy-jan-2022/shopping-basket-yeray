@@ -26,7 +26,10 @@ Then it should contain the following infomation:
         var breakingBad = new Product("Breaking Bad", new Money(7), breakingBadID);
         // This test breaks at midnight.
         var createdAt = DateTime.Now.Date;
-        var service = new ShoppingBasketService(new ShoppingBasketRepository(), new ProductRepository(), new TimeProvider());
+        IProductRepository productRepository = new ProductRepository();
+        productRepository.Upsert(hobbit);
+        productRepository.Upsert(breakingBad);
+        var service = new ShoppingBasketService(new ShoppingBasketRepository(), productRepository, new TimeProvider());
         service.AddItem(userID, hobbitID, 2);
         service.AddItem(userID, breakingBadID, 5);
         var basket = service.BasketFor(userID);
