@@ -2,35 +2,41 @@
 
 public class ShoppingBasketRepository : IShoppingBasketRepository
 {
-    private readonly Dictionary<UserID, Dictionary<ProductID, (int, DateTime)>> database = new();
+    private class UserBasket
+    {
+        public DateTime CreatedAt { get; }
+        public Dictionary<ProductID, int> Amounts { get; } = new();
+
+        public UserBasket(DateTime createdAt) =>
+            CreatedAt = createdAt;
+
+        public void Add(ProductID id, int amount)
+        {
+            if (!Amounts.ContainsKey(id))
+                Amounts[id] = 0;
+            Amounts[id] += amount;
+        }
+    }
+
+    private readonly Dictionary<UserID, UserBasket> database = new();
 
     public void Register(UserID userID, ProductID productID, int amount, DateTime createdAt)
     {
         if (!database.ContainsKey(userID))
         {
-            database[userID] = new Dictionary<ProductID, (int, DateTime)>();
+            database[userID] = new UserBasket(createdAt);
         }
-
-        if (!database[userID].ContainsKey(productID))
-        {
-            database[userID][productID] = (amount, createdAt);
-            return;
-        }
-
-        var (currentAmount, originalCreatedAt) = database[userID][productID];
-        database[userID][productID] = (amount + currentAmount, originalCreatedAt);
+        database[userID].Add(productID, amount);
     }
 
     public UserProductAmount[] GetFor(UserID userID)
     {
-        if (!database.ContainsKey(userID))
-            return Array.Empty<UserProductAmount>();
-
         var result = new List<UserProductAmount>();
-        foreach (var item in database[userID])
+        var createdAt = database[userID].CreatedAt;
+        foreach (var item in database[userID].Amounts)
         {
-            var (amount, createdAt) = item.Value;
-            result.Add(new UserProductAmount(item.Key, userID, amount, createdAt));
+            var (productID, amount) = item;
+            result.Add(new UserProductAmount(productID, userID, amount, createdAt));
         }
 
         return result.ToArray();
