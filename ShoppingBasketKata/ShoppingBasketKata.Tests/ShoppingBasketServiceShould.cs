@@ -44,11 +44,8 @@ public class ShoppingBasketServiceShould
             timeProviderMock.Object
         );
         var result = service.BasketFor(userID);
-        var expectedBasket = new Basket(
-            userID,
-            CreatedAt,
-            new[] { new BasketEntry(hobbit, 7) }
-        );
-        Assert.Equal(expectedBasket, result);
+        Assert.Equal(userID, result.UserID);
+        Assert.Equal(CreatedAt, result.CreatedAt);
+        Assert.Equal(new[] { new BasketEntry(hobbit, 7) }, result.Products);
     }
 }
