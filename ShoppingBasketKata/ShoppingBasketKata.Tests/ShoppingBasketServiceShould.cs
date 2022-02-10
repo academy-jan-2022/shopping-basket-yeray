@@ -32,6 +32,8 @@ public class ShoppingBasketServiceShould
         var hobbitID = new ProductID(1);
         var hobbit = new Product("The Hobbit", new Money(5), hobbitID);
         var shoppingBasketRepositoryMock = new Mock<IShoppingBasketRepository>();
+        shoppingBasketRepositoryMock.Setup(sbr => sbr.GetFor(userID))
+            .Returns(new[] { new UserProductAmount(hobbitID, userID, 7, CreatedAt) });
         var timeProviderMock = new Mock<ITimeProvider>();
         timeProviderMock.Setup(tp => tp.Now()).Returns(CreatedAt);
         var productRepositoryMock = new Mock<IProductRepository>();

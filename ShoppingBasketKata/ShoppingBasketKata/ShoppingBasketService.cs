@@ -18,7 +18,16 @@ public class ShoppingBasketService
 
     public Basket BasketFor(UserID userId)
     {
-        throw new NotImplementedException();
+        var items = shoppingBasketRepository.GetFor(userId);
+        var createdAt = items.First().CreatedAt;
+        var basketEntries = new List<BasketEntry>();
+        foreach (var item in items)
+        {
+            var product = productRepository.Get(item.ProductID);
+            basketEntries.Add(new BasketEntry(product, item.Amount));
+        }
+
+        return new Basket(userId, createdAt, basketEntries.ToArray());
     }
 }
 

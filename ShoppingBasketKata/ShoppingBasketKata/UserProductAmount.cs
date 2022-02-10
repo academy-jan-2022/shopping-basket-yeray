@@ -1,3 +1,3 @@
 ﻿namespace ShoppingBasketKata;
 
-public record UserProductAmount(ProductID ProductID, UserID UserID, int Count, DateTime CreatedAt);
+public record UserProductAmount(ProductID ProductID, UserID UserID, int Amount, DateTime CreatedAt);
